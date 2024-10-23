@@ -1,0 +1,90 @@
+function signupSubmit() {
+
+    let details = localStorage.getItem("userData");
+    details = JSON.parse(details);
+    console.log(details);
+
+
+    // getting values
+    const fullName = document.getElementById("fullName").value;
+    const password = document.getElementById("password").value;
+    const email = document.getElementById("email").value;
+
+    let invalidMsgFullName = document.getElementById("invalid-msg-fullname");
+    let invalidMsgPassword = document.getElementById("invalid-msg-password");
+    let invalidMsgEmail = document.getElementById("invalid-msg-email");
+    // let invalidMsgSubmit = document.getElementById("invalid-msg-submit");
+
+    let reName = /^[A-Za-z]+$/;
+    let reEmail = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+    let rePass = /^(?=.*\d)(?=.*[~`!@#$%^&*()--+={}\[\]|\\:;"'<>,.?/_₹])(?=.*[a-z])(?=.*[A-Z]).{5,10}$/;
+
+
+    // validation 
+    // if validation false
+// if (fullName.length == 0 && email.length == 0 && password.length == 0) {
+    //     invalidMsgSubmit.innerHTML = "Please Fill Fields Correctly"
+    //     setTimeout(function () { invalidMsgSubmit.style.display = "none"; }, 3000);
+    //     return false;
+
+    // }
+
+    // validation name
+    if (fullName.length == 0) {
+        invalidMsgFullName.innerHTML = "Enter a Name"
+        return false;
+    }
+    // validation email
+    else if (email.length == 0 && reEmail.test(email) == false) {
+        invalidMsgEmail.innerHTML = "Enter a valid Email"
+        return false;
+    }
+       
+    // else if(details.match(email) == true){
+    //     invalidMsgEmail.innerHTML = "Already registered"
+    //     return false;
+    // }
+
+    // validation password
+    else if (rePass.test(password) == false) {
+        invalidMsgPassword.innerHTML = "Enter a valid Password with one uppercase and lowercase letter and at least 8 digits."
+        return false;
+    }
+    // if validation true
+    else {
+        invalidMsgEmail.innerHTML = `<i class="fa-regular fa-circle-check"></i>`
+        invalidMsgPassword.innerHTML = `<i class="fa-regular fa-circle-check"></i>`
+        invalidMsgFullName.innerHTML = `<i class="fa-regular fa-circle-check"></i>`
+        
+
+        // localstorage store
+
+        localStorage.setItem("username", fullName);
+        localStorage.setItem("email", email);
+        localStorage.setItem("password", password);
+
+        // redirect login
+
+        window.location.href = "http://127.0.0.1:5500/login.html"
+
+
+        // check here email ....
+        
+        // array of users
+        let users = [];
+        let userData = {
+            username: fullName,
+            email: email,
+            password: password
+        }
+        users.push(userData);
+
+        console.log(users)
+
+        localStorage.setItem("userData", JSON.stringify(users))
+        fullName.innerHTML = "";
+        email.innerHTML = "";
+    
+
+    }
+}
