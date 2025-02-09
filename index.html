@@ -4,259 +4,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- navbar part -->
-    <header>
-        <nav class="dis-row-between">
-            <ul class="nav-list dis-row-around">
-                <li><a href="#">Home</a></li>
-                <li><a href="#intro">About Me</a></li>
-                <li> <a href="#projects">Projects</a></li>
-                <li> <a href="#Skills">Skills</a></li>
-                <li> <a href="#Contact">Contact Me</a></li>
-            </ul>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <span>Search</span>
-            </div>
-        </nav>
-    </header>
-
-    <main class="dis-col-center">
-        <div class="tech_refer dis-row-center">Performed At
-            <img src="portfolio_images/techpathshala_logo.png" alt="tech.logo">techpaathshala.
-            <a href="#">View More</a>
+    <!-- Header Section -->
+    <header id="header">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#intro">About Me</a></li>
+            <li> <a href="#projects">Projects</a></li>
+            <li> <a href="#Skills">Skills</a></li>
+            <li> <a href="#Contact">Contact Me</a></li>
+        </ul>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search" />
         </div>
-        <video src="portfolio_images/intro_video.webm"></video>
+    </header>
+    <main>
+        <!-- video section -->
+        <section id="video-section">
+            <div class="basic-info">
+                <p>Performed At</p>
+                <div class="view-more">
+                    <img src="assets/techpathshala_logo.png" alt="techpaathshala" />
+                    <a href="www.google.com">View More</a>
+                </div>
+            </div>
+            <video src="assets/intro_video.webm" type="MYVIDEO/mp4" width="100%" loop controls></video>
+        </section>
+        <!-- My info section -->
+        <section id="my-information">
+            <div class="about-me">
+                <h1>Frontend Developer</h1>
+                <h2 class="my-name">Sheela Mishra</h2>
+                <p class="my-description">
+                    My name is sheela mishra, A web deveoper, React developer, passionate fresher about web development,
+                    coding ,
+                    creativity, art. Made
+                    few projects using HTML, CSS, java Script and React.js .
+                    <br><br>
+                    <a href="#"><button class="button">Download Resume</button></a>
+                    <a href="#"><button id="mywork-button">See My Work</button></a>
+            </div>
+
+            <div class="my-photo">
+                <img src="assets/Sheela_img-removebg-preview.png" alt="photo" />
+            </div>
+
+            <div class="suitable-for">
+                <h2 class="suitable-title">I'm Suitable For</h2>
+                <div class="suitable">
+                    <p>Frontend Developer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- expertise section -->
+        <section id="expertise">
+            <h2>Expertise</h2>
+            <div class="expertise-card">
+                <div class="expertise-content">
+                    <img src="assets/coding.jpg" alt="code" />
+
+                    <div class="expertise-info">
+                        <h3>Frontend Development</h3>
+                        <p>
+                            A Frontend developer builds a Frontend portion of a website and web application- the part
+                            users see and interacted with a Frontend developer creates websites using languages such as
+                            Html, Css, Javascript that allow user to access and interacted with the website.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skils section -->
+        <section id="tech-skills">
+            <h2>Tech Skills</h2>
+            <div class="logos">
+                <div class="logo-image">
+                    <img src="assets/vs.jpg" alt="vscode" />
+                    <p>VS CODE</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/html.png" alt="vscode" />
+                    <p>HTML</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/css.png" alt="vscode" />
+                    <p>CSS</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/js.png" alt="git" />
+                    <p>Javascript</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/git.png" alt="git" />
+                    <p>GIT</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/npm.jpeg" alt="" />
+                    <p>NPM</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/react.png" alt="" />
+                    <p>ReactJs</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/redux..jpeg" alt="" />
+                    <p>Redux</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/bootstrap.jpg" alt="" />
+                    <p>Bootstrap</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/tailwind.jpeg" alt="" />
+                    <p>Tailwind</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/postman.webp" alt="" />
+                    <p>Postman</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/mysql-logo.svg" alt="" />
+                    <p>MySql</p>
+                </div>
+
+                <div class="logo-image">
+                    <img src="assets/msoffice.png" alt="git" />
+                    <p>MS office</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- soft skills section -->
+        <section id="soft-skills">
+            <h2>Soft Skills</h2>
+            <div class="softskills-card">
+                <div class="small-card">
+                    <img src="assets/formkit_time (1).png" alt="" />
+                    <p>
+                        Time <br />
+                        Management
+                    </p>
+                </div>
+                <div class="small-card">
+                    <img src="assets/charm_square-tick.png" alt="" />
+                    <p>
+                        Problem <br />
+                        Solving
+                    </p>
+                </div>
+                <div class="small-card">
+                    <img src="assets/teamlead.png" alt="" />
+                    <p>
+                        Excellent <br />
+                        Team Lead
+                    </p>
+                </div>
+                <div class="small-card">
+                    <img src="assets/mdi_application-brackets-outline.png" alt="" />
+                    <p>
+                        Application <br />
+                        Development
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project section -->
+        <section id="project-container">
+            <h2>Projects</h2>
+            <div class="project-cards-container" id="card-slider">
+                <div class="project-card">
+                    <img src="assets/quiz-app.png" alt="resume" />
+                    <p class="project-name">Quiz Application</p>
+                    <p class="project-description">
+                        My project name is quiz app. here a user can signup, login and give quiz and based on the answer
+                        a leaderboard will be shown where scores and rank will be shown.
+                    </p>
+                    <button class="view-project">View Project</button>
+                </div>
+                <div class="project-card">
+                    <img src="assets/expensetracker.png" alt="resume" />
+                    <p class="project-name">Expense tracker</p>
+                    <p class="project-description">
+                        My project name is expense tracker. here you can add your budget, your expense to manage,track
+                        and control all your expense.
+                    </p>
+                    <button class="view-project">View Project</button>
+                </div>
+                <div class="project-card">
+                    <img src="assets/jarvis.jpg" alt="resume" />
+                    <p class="project-name">Jarvis Company website</p>
+                    <p class="project-description">
+                        My project name is jarvis company website, in this i have clone the official website of jarvis
+                        and make it pixel perfect design also added some functionally using javascript.
+                    </p>
+                    <button class="view-project">View Project</button>
+                </div>
+                <div class="project-card">
+                    <img src="assets/port.philip.png" alt="resume" />
+                    <p class="project-name">Portfolio</p>
+                    <p class="project-description">
+                        My project name is portfolio in this project you can able to see my
+                        like my skills education cantact information photos
+                        etc.
+                    </p>
+                    <button class="view-project">View Project</button>
+                </div>
+                <div class="project-card">
+                    <img src="assets/remedies.png" alt="resume" />
+                    <p class="project-name">Remedies page</p>
+                    <p class="project-description">
+                        My project name is remedies page, here user can see different remedies based on their problems
+                        from head to toe like hair fall dandruff, acidity acne etc.
+                    </p>
+                    <button class="view-project">View Project</button>
+                </div>
+                <div class="project-card">
+                    <img src="assets/calc.png" alt="resume" />
+                    <p class="project-name">Calulator</p>
+                    <p class="project-description">
+                        My project name is calculator. here i have made fully working calculator, where you can do
+                        calculations like addition, substraction, multiplication, division.
+                    </p>
+                    <button class="view-project">View Project</button>
+                </div>
+                <div class="project-card">
+                    <img src="assets/todo.png" alt="resume" />
+                    <p class="project-name">To Do App</p>
+                    <p class="project-description">
+                        My project name is TO Do app, in this you can manage your tasks to do and can mark it as
+                        completed.
+                    </p>
+                    <button class="view-project">View Project</button>
+                </div>
+            </div>
+
+            <div class="slider-btn">
+                <button onclick="slideLeft()" class="slider-button">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <button onclick="slideRight()" class="slider-button">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Experience section -->
+        <section id="experience-container">
+            <h2>Experience</h2>
+            <div class="experience-cards">
+                <div class="experience-card">
+                    <div class="logo">
+                        <img src="assets/godrej.jpeg" alt="g" />
+                        <button class="know-more">Know More</button>
+                    </div>
+                    <div class="information">
+                        <p class="company-name">Godrej Memorial Hospital</p>
+                        <p class="joining-month">Feb 2021 - Dec 2023</p>
+                        <p class="job-description">Jr. Lab technician</p>
+                        <p>Here i have worked in rotational shifts and independently managed all the sectional
+                            department.</p>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="logo">
+                        <img src="assets/techpathshala_mobile_logo.svg" alt="g" />
+                        <button class="know-more">Know More</button>
+                    </div>
+                    <div class="information">
+                        <p class="company-name">Techpaathshala</p>
+                        <p class="joining-month">July 2024 - Dec 2024</p>
+                        <p class="job-description">Jr. Developer Trainee</p>
+                        <p>Here i have made some projects like Quiz Application, expense tracker and worked on live
+                            projects like on official website of Techpaathshala.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- qualification section -->
+        <section id="qualification-container">
+            <h2>Qualification</h2>
+            <div class="qualification-information">
+                <div class="education-information">
+                    <ul>
+                        <li>SSC</li>
+                        <p>National High school till 2014</p>
+                        <li>HSC</li>
+                        <p>Ramniranjan jhunjhunwala college 2014 - 2016</p>
+                        <li>Bachelors</li>
+                        <p>ITM-IHS panvel 2016 - 2019</p>
+                        <!-- <li>Masters</li>
+          <p>xyz school 2023 - 2025</p> -->
+                        <li>Training Certificate</li>
+                        <p>Techpaathshala 2024 - 2025</p>
+                    </ul>
+                </div>
+                <div class="experience-achievement">
+                    <img src="assets/graduate.png" alt="" />
+                    <p>
+                        Achievement <br />
+                        Attended marathons at sakec college, godrej and boyce.
+                        <br />Got first price in Poster competion and best out of waste <br />
+                        participated in hackathons <br>
+                        got 3 *** in hackerrank.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- About Me -->
-    <div class=" intro dis-row-even">
-        <div class="intro_left">
-            <h1 class="head1">Front End Developer</h1>
-            <h2 class="head2">Sheela Mishra</h2>
-            <p class="para">A web deveoper, React developer, passionate fresher about web development, coding ,
-                creativity, art .Made
-                few projects using HTML, CSS, java Script and React.js .</p>
-            <a href="#"><button class="btn-small">Download resume</button></a>
-            <a href="#"><button class="btn-small"> See My work</button></a>
+    <!-- footer part -->
+    <footer id="footer">
+        <div class="footer-container">
+            <img src="assets/sheela_whiteBG.png" alt="owner" />
         </div>
-        <div class="intro_right"><img src="portfolio_images/sheela_whiteBG.png" alt="mypic"></div>
-    </div>
-    <div class="suitable dis-col-center">
-        <h2>I'm Suitable For</h2>
-        <div>
-            <span>Frontend Developer</span>
-            <span>Lab technician</span>
-            <span>Ms Office</span>
-        </div>
-    </div>
-    <!-- Expertise part -->
-    <section class="expert">
-        <h1 class="head1">Expertise</h1>
-        <div class="expertise dis-row-even">
-            <div class="exp_left dis-col-center">
-                <img src="portfolio_images/coding.jpg" alt="coding_images">
-            </div>
-            <div class="exp_right">
-                <h1>Frontend development</h1>
-                <p>The demand for frontend developers are on the rise and this is the best time to up your game. Here
-                    are my
-                    some work in front end development using skills like HTML, CSS, Javascript, React.js . I am having
-                    creativity and artistic nature also interest towords coding, my dedication and patience helped me to
-                    sharpened my skills and the results are i having expertise in frontend development.</p>
-            </div>
-        </div>
-    </section>
+        <div class="my-information2">
+            <h3>Sheela Mishra</h3>
 
-    <!-- Tech Skills part -->
-    <section class="Tech-skill">
-        <h1 class="head1">Tech Skills</h1>
-        <div class="tech_skills dis-row-center">
-            <div class="skills dis-col-center"><img src="portfolio_images/vs.jpg" alt="vscode">
-                <p>VSCODE</p>
-            </div>
-            <div class="skills dis-col-center"> <img src="portfolio_images/html.png" alt="html">
-                <p>HTML</p>
-            </div>
-            <div class="skills dis-col-center"> <img src="portfolio_images/css.png" alt="css">
-                <p>CSS</p>
-            </div>
-            <div class="skills dis-col-center"><img src="portfolio_images/js.png" alt="js">
-                <p>Javascript</p>
-            </div>
-            <div class="skills dis-col-center"> <img src="portfolio_images/react.png" alt="react.js">
-                <p>ReactJS</p>
-            </div>
-            <div class="skills dis-col-center"><img src="portfolio_images/git.png" alt="git">
-                <p>GIT</p>
-            </div>
-            <div class="skills dis-col-center"><img src="portfolio_images/git hub.png" alt="github">
-                <p>GIT Hub</p>
-            </div>
-            <div class="skills dis-col-center"><img src="portfolio_images/msoffice.png" alt="ms_office">
-                <p>MS OFFICE</p>
-            </div>
-            <div class="skills dis-col-center"><img src="portfolio_images/mysql.png" alt="ms_office">
-                <p>MySQL</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- soft skill part -->
-    <section class="Soft-skill">
-    <h1 class="head1">Soft Skills</h1>
-    <div class="soft_skills dis-row-even">
-        <!-- <img src="portfolio_images/soft skills.jpg" alt="soft_skills"> -->
-        <div class="skills dis-col-center">
-            <i class="fa-regular fa-clock"></i>
-            <br>
-            <p>Time <br>Management</p>
-        </div>
-        <div class="skills dis-col-center">
-            <i class="fa-regular fa-square-check"></i>
-            <br>
-            <p>Problem <br> Solving</p>
-        </div>
-        <div class="skills dis-col-center">
-            <i class="fa-solid fa-user-tie"></i>
-            <br>
-            <p>Excellent <br> Team Lead</p>
-        </div>
-        <div class="skills dis-col-center">
-            <i class="fa-regular fa-file-code"></i>
-            <br>
-            <p>Application <br> Development</p>
-        </div>
-    </div>
-</section>
-
-    <!-- projects -->
-     <section class="Project">
-        <h1 class="head1">Projects</h1>
-    <div class="projects dis-row-around">
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/quiz-app.png" alt="">
-            <h4>Quiz App</h4>
-            <p>HTML, CSS , JS</p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/calc.png" alt="">
-            <h4> Calculator </h4>
-            <p>HTML, CSS </p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/amazon.png" alt="">
-            <h4>Amazon Clone</h4>
-            <p>HTML, CSS </p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/todo.png" alt="">
-            <h4>To Do List</h4>
-            <p>HTML, CSS , JS</p>
-            <a href="#"><button class="btn-small">View Project</button></a>
+            <p class="email">
+                <i class="icon fa-regular fa-envelope"></i>scmishra2399@gmail.com
+            </p>
+            <p class="number"><i class="icon fa-solid fa-phone"></i>8108226466</p>
+            <button class="contactme">Conatct Me</button>
         </div>
 
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/certificate.webp" alt="">
-            <h4>Certificate page</h4>
-            <p>HTML, CSS </p>
-            <a href="#"><button class="btn-small">View Project</button></a>
+        <div class="copyright">
+            <p>&copy; 2025 Sheela Mishra. All Right Reserved</p>
         </div>
-
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/port.philip.png" alt="">
-            <h4>Portfolio Page</h4>
-            <p>HTML, CSS </p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/remedies.png" alt="">
-            <h4>Remedies App</h4>
-            <p>HTML, CSS , JS</p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/socialshare.png" alt="">
-            <h4>Social Media Links</h4>
-            <p>HTML, CSS </p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/survey.webp" alt="">
-            <h4>Survey Form</h4>
-            <p>HTML, CSS</p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/perfumetask.png" alt="">
-            <h4>Advertisement page</h4>
-            <p>HTML, CSS</p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-        <div class="projects-div dis-col-center">
-            <img src="portfolio_images/jarvis.jpg" alt="">
-            <h4>Jarvis Website Clone</h4>
-            <p>HTML, CSS , JS</p>
-            <a href="#"><button class="btn-small">View Project</button></a>
-        </div>
-    </div>
-</section>
-    <!-- Experience part -->
-    <div class="experience">
-        <div class="exp">
-            <img src="" alt="">
-            <h3>Godrej Memorial Hospital</h3>
-            <p>Feb 2021 - Dec 2023</p>
-            <p>lab technician</p>
-        </div>
-        <div class="exp">
-            <img src="" alt="">
-            <h3>Samarpan Blood bank</h3>
-            <p>Oct 2019 - March 2020</p>
-            <p>lab technician</p>
-        </div>
-    </div>
-
-    <!-- Qualification Part -->
-    <div class="Qualification">
-        <ul>
-            <li>SSC</li>
-            <p>National High School, 2014</p>
-            <li>HSC</li>
-            <p>RJ college, 2014-2016</p>
-            <li>Bachelors</li>
-            <p>ITM-IHS, 2016-2019</p>
-            <li>Mastery Programme</li>
-            <p>techpaathshala, 2024</p>
-        </ul>
-        <div><img src="portfolio_images/sheela.1.jpg" alt="mypic">
-            <p>Pasionate Artistic person, got prizes in arts, marathons.</p>
-        </div>
-    </div>
-
-    <!-- Contact part -->
-    <div id="Contact">
-        <img src="portfolio_images/sheela.1.jpg" alt="mypic">
-        <h1>Sheela Mishra</h1>
-        <span> <i class="fa-regular fa-envelope"></i> </span><span>sheelamishra1999@gmail.com</span>
-        <br>
-        <button><a href="https://www.linkedin.com/in/sheela-mishra-265988291/">Contact Me</a></button>
-    </div>
-
-
-
+    </footer>
+<script src="index.js"></script>
 </body>
 
 </html>
